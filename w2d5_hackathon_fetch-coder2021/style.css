@@ -1,3 +1,16 @@
+body {
+    background-image: url('https://www.glasgowtimes.co.uk/resources/images/5283517/');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#title {
+    color: #0f0e0eda; font-size: 48px; font-family: Audiowide, sans-serif; padding-bottom: 10px;
+    text-shadow: 3px 3px 3px #ababab;
+    text-align: center;
+}
+
 #pokemon-image {
     display: block;
     margin-left: 18%;
