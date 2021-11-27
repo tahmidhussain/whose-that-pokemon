@@ -1,0 +1,26 @@
+#pokemon-image {
+    display: block;
+    margin-left: 18%;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 220px
+}
+
+button {
+    background-color: rgb(255, 251, 0);
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 8px solid rgb(10, 10, 10);
+    color: rgb(5, 5, 5);
+    text-align: center;
+    position: relative;
+    margin-left: 20%;
+    margin-right: auto;
+    top: 200x;
+
+            
+        }
