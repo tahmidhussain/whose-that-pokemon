@@ -30,17 +30,21 @@
     //    console.log(n);
     async function randomiser(){
         let n = Math.floor(Math.random() * 150) + 1;
-       console.log(n); const response = await fetch(`https://pokeapi.co/api/v2/pokemon/` +n ) 
-       console.log(n)
-       const data = await response.json();
+        console.log(n); 
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/` + n);
+		const data = await response.json();
 
-    console.log("Pokemon name: " + data.name) + console.log("abilities: " + data.abilities[0].ability.name) + 
-    console.log(data.abilities[1].ability.name) + console.log("Pokemon type: " + data.types[0].type.name) 
-    + console.log(data.types[1].type.name) + console.log("Height(m): " + data.height/10);
-         document.querySelector('#name').innerText = "Name: " + data.name;
-         document.querySelector('#abilities').innerText = 'Ability: ' + data.abilities[0].ability.name;
-         document.querySelector('#type').innerText = 'Type: ' + data.types[0].type.name;
-         document.querySelector('#height').innerText = 'Height: '+ data.height/10 + 'meters';
+        console.log("Pokemon name: " + data.name);
+        console.log("abilities: " + data.abilities[0].ability.name); 
+		console.log(data.abilities[1].ability.name);
+		console.log("Pokemon type: " + data.types[0].type.name);
+		console.log(data.types[0].type.name);
+		console.log("Height(m): " + data.height/10);
+    
+		document.querySelector('#name').innerText = "Name: " + data.name;
+        document.querySelector('#abilities').innerText = 'Ability: ' + data.abilities[0].ability.name;
+        document.querySelector('#type').innerText = 'Type: ' + data.types[0].type.name;
+        document.querySelector('#height').innerText = 'Height: '+ data.height/10 + 'meters';
 
     }
     // async function getQuote() {
